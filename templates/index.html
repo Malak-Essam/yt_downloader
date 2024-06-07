@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="{{url_for('download')}}" method="post">
+        <input type="text" name="url" id="url">
+        <button>download</button>
+    </form>
+    <form action="{{url_for('downloadPlaylist')}}" method="post">
+        <input type="text" name="listUrl" id="listUrl">
+        <button>download playlist</button>
+    </form>
+</body>
+</html>
